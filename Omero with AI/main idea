@@ -1,0 +1,10 @@
+The main goal is to enable users to apply a pre-trained neural network model directly to images stored in OMERO, without the need to export data or use external coding tools. This would make advanced image analysis accessible to users without coding knowledge.
+
+To achieve this:
+Integrate the trained AI model as a plugin or processing service within OMERO.
+
+Provide a simple, easy-to-use interface (e.g., a button or menu option) to run the model on selected images.
+
+Automate the processing workflow (image retrieval → model inference → result storage).
+
+Display results directly in OMERO (as new regions of interest, overlays, or annotation layers).
