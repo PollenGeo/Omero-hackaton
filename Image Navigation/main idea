@@ -1,5 +1,3 @@
-The main idea behind the code is to facilitate and optimize the review of high-resolution microscopic images, helping users maintain better spatial orientation while analyzing very small areas (20–40 microns). During this process, it is common to lose track of areas that have already been examined or to leave important areas unreviewed.
+goal=helping the user to navigate across a large image.  When there is a large image containing hundreds of object of different sizes, it is difficult to keep track of what part of the image has been explored
 
-To solve this problem, we propose:
-
-Implement a customizable grid (e.g., 20×10) that serves as a visual aid for organizing and planning navigation within the image. This grid does not represent regions of interest, but acts as a reference and can be enabled or disabled in the settings.
+We propose to implement a customizable grid (e.g., 20×10), where user defines a grid to be overlaid on the image. This grid is not a ROI but a reference guide.
