@@ -1,1 +1,7 @@
+The main idea is to standardize and simplify the annotation process for ROIs within each project by using a predefined dictionary of terms.
 
+To achieve this:
+
+Currently, we already have such a dictionary implemented as a Google extension, but our goal is to integrate this dictionary directly into OMERO.
+
+Make this dictionary available directly in the ROI annotation field, so users can select terms instead of typing free text.
