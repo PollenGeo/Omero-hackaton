@@ -1,7 +1,7 @@
-The main idea behind this code is to facilitate the search and comparison of annotations by shape, allowing users to find specific regions more quickly and in a more organized manner.
+goal=  query by ROIs annotations and see the results (grouping all shapes found by the query)
 
-To achieve this, we propose:
+We propose
 
-- Allowing annotations to be searched by shape type (e.g., circles, rectangles, polygons, etc.).
+- Make possible to search by the text of the annotation associated to a ROI
 
 - Display the results in a grid view, where each result is presented in an individual box, side by side.
