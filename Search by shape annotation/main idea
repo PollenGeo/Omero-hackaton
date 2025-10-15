@@ -1,0 +1,7 @@
+The main idea behind this code is to facilitate the search and comparison of annotations by shape, allowing users to find specific regions more quickly and in a more organized manner.
+
+To achieve this, we propose:
+
+- Allowing annotations to be searched by shape type (e.g., circles, rectangles, polygons, etc.).
+
+- Display the results in a grid view, where each result is presented in an individual box, side by side.
