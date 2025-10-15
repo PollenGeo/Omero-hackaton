@@ -1,8 +1,8 @@
-The main idea behind this code is to enable detailed tracking of the history of each Region of Interest (ROI) individually, with the aim of improving traceability and collaboration in image analysis.
+goal= track the history of creation/change of shape ROIs
 
-Specifically, it seeks to:
-
-- Record who created each ROI and keep that information visible.
-
-- Show who has subsequently modified or annotated it, allowing the contributions of different users to be easily identified.
+Omero should be able to store/retrieve the following information
+- User that created a shape ROI 
+-User that subsequently modified the position or outline of the shape ROI
+-User that annotate the shape ROI
+-User that modified a previous annotation.
 
