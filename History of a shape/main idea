@@ -1,0 +1,8 @@
+The main idea behind this code is to enable detailed tracking of the history of each Region of Interest (ROI) individually, with the aim of improving traceability and collaboration in image analysis.
+
+Specifically, it seeks to:
+
+- Record who created each ROI and keep that information visible.
+
+- Show who has subsequently modified or annotated it, allowing the contributions of different users to be easily identified.
+
