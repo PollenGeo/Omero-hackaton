@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    *{
+      font-family: Calibri, sans-serif;
+    }
+    body { 
+      width: 300px; 
+      padding: 10px; 
+      font-family: Calibri, sans-serif;
+    }
+    .container { 
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+    #status { 
+      margin-top: 10px; 
+      color: green; 
+    }
+    .error {
+      color: red;
+    }
+    .separator-select {
+      margin: 10px 0;
+    }
+    .preview-table {
+      width: 100%;
+      margin-top: 10px;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+    .preview-table th, .preview-table td {
+      border: 1px solid #ddd;
+      padding: 4px;
+      text-align: left;
+    }
+    .preview-table th {
+      background-color: #f5f5f5;
+    }
+    .preview-section {
+      margin-top: 10px;
+      max-height: 150px;
+      overflow-y: auto;
+    }
+    #currentData {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #f5f5f5;
+      border-radius: 4px;
+    }
+    #toggleButton {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #32b838;
+      border-radius: 10px;
+    }
+    #fileInput {
+      
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #7d9eb8;
+      border-radius: 5px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Upload Species CSV</h2>
+    <p>File must include only one column with the taxa name, and the column must have no name</p>
+    
+    <div class="separator-select">
+      <label>CSV Separator:</label>
+      <select id="separatorSelect">
+        <option value=",">Comma (,)</option>
+        <option value=";">Semicolon (;)</option>
+      </select>
+    </div>
+    
+    <input type="file" id="fileInput" accept=".csv">
+    <div id="status"></div>
+    <button id="toggleButton">Autocomplete Active</button>
+    <div id="previewSection" class="preview-section" style="display: none;">
+      <h4>Preview:</h4>
+      <div id="preview"></div>
+    </div>
+
+    <div id="currentData">
+      <h4>Currently Loaded:</h4>
+      <div id="loadedCount">No species loaded</div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

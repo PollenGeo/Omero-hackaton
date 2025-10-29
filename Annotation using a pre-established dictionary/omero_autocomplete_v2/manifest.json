@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Species Autocomplete fo OMERO",
+    "icons": {
+      "48": "pollen.png",
+      "96": "pollen.png"
+    },
+    "version": "2.0",
+    "description": "Adds species name autocomplete from CSV files with only one column to web browser text inputs, focused on writing consistent OMERO tags.",
+    "author": "David Caro",
+    "permissions": ["storage", "activeTab"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+      "matches": ["<all_urls>"],
+      "css": ["content.css"],
+      "js": ["content.js"]
+    }]
+  }
+  

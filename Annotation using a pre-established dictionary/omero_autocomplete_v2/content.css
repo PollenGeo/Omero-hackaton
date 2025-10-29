@@ -1,0 +1,25 @@
+.species-suggestions {
+  position: fixed;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.species-suggestion-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+.species-suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+.species-suggestion-item em {
+  font-style: italic;
+  color: #666;
+}
